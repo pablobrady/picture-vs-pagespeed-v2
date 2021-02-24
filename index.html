@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PICTURE vs PAGESPEED SMACKDOWN</title>
+  </head>
+  <body>
+    <div>
+      <picture>
+        <source
+          media="(min-width: 1000px)"
+          srcset="
+            https://via.placeholder.com/1000x500.png/ff0000/ffffff/?text=1000x500(lg)
+          "
+        />
+        <source
+          media="(min-width: 750px)"
+          srcset="
+            https://via.placeholder.com/750x375.png/ff00ff/ffffff/?text=750x375(md2)
+          "
+        />
+        <source
+          media="(min-width: 500px)"
+          srcset="
+            https://via.placeholder.com/500x250.png/00ff00/ffffff/?text=500x250(md)
+          "
+        />
+        <source
+          media="(min-width: 400px)"
+          srcset="
+            https://via.placeholder.com/400x187.png/999900/333333/?text=400x187(sm3)
+          "
+        />
+        <source
+          media="(min-width: 375px)"
+          srcset="
+            https://via.placeholder.com/375x168.png/009999/ffffff/?text=375x168(sm2)
+          "
+        />
+        <source
+          media="(min-width: 250px)"
+          srcset="
+            https://via.placeholder.com/250x125.png/0000ff/ffffff/?text=250x125(sm)
+          "
+        />
+        <img
+          style="width: 100%;"
+          src="https://via.placeholder.com/250x125.png/999999/ffffff/?text=2000x2000+(default)"
+        />
+      </picture>
+    </div>
+  </body>
+</html>

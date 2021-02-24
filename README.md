@@ -1,2 +1,2 @@
-# picture-vs-pagespeed-v2
+# Picture-vs-Pagespeed
 Created with CodeSandbox
